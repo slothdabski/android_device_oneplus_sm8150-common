@@ -106,6 +106,10 @@ PRODUCT_PACKAGES += \
     libdisplayconfig \
     libqdMetaData.system
 
+# Doze
+PRODUCT_PACKAGES += \
+    OnePlusDoze
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.oneplus_msmnile
