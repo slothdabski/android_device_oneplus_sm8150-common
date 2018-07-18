@@ -1,5 +1,6 @@
-allow system_server adb_data_file:dir getattr;
+type hal_cameraHIDL_default, domain;
 
-r_dir_file(system_server, sysfs_battery_supply)
-
-allow system_server pixeldust_data_file:file r_file_perms;
+allow system_server hal_cameraHIDL_hwservice:hwservice_manager find;
+binder_call(system_server, hal_cameraHIDL_default)
+get_prop(system_server, persist_camera_prop)
+get_prop(system_server, vendor_camera_prop)
