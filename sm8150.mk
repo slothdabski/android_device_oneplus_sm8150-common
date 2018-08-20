@@ -189,6 +189,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_STATIC_BOOT_CONTROL_HAL := \
     bootctrl.msmnile \
     libcutils \
+    libgptutils.oneplus_msmnile.recovery \
     librecovery_updater_msm \
     libz \
 
