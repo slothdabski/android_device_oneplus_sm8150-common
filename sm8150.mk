@@ -184,14 +184,12 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.0-impl \
-    android.hardware.boot@1.0-service
-
-PRODUCT_STATIC_BOOT_CONTROL_HAL := \
+    android.hardware.boot@1.0-service \
+    android.hardware.boot@1.0-impl.recovery \
     bootctrl.msmnile \
-    libcutils \
+    bootctrl.msmnile.recovery \
     libgptutils.oneplus_msmnile.recovery \
-    librecovery_updater_msm \
-    libz \
+    librecovery_updater_msm
 
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client

@@ -1,3 +1,6 @@
 subdirs = [
     "tri-state-key"
 ]
+soong_namespace {
+    imports: ["hardware/qcom/bootctrl"],
+}
