@@ -188,6 +188,10 @@ TARGET_COMMON_QTI_COMPONENTS := \
     telephony \
     wfd
 
+# Touch
+PRODUCT_PACKAGES += \
+    vendor.lineage.touch@1.0-service.oneplus_msmnile
+
 # tri-state-key
 PRODUCT_PACKAGES += \
     TriStateHandler \
