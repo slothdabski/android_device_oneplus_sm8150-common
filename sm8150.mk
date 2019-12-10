@@ -89,6 +89,10 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.qcom.post_boot.sh
 
+# Device Settings
+PRODUCT_PACKAGES += \
+    DeviceSettings
+
 # Display
 PRODUCT_PACKAGES += \
     libdisplayconfig \
