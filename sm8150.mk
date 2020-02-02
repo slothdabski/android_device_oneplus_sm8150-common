@@ -201,6 +201,10 @@ PRODUCT_PACKAGES += \
     TriStateHandler \
     tri-state-key_daemon
 
+# TouchGestures
+PRODUCT_PACKAGES += \
+    TouchGestures
+
 # Update engine
 PRODUCT_PACKAGES += \
     update_engine \
