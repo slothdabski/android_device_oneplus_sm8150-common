@@ -86,6 +86,7 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # Common init scripts
 PRODUCT_PACKAGES += \
+    init.opcamera.rc \
     init.qcom.rc \
     init.qcom.post_boot.sh
 

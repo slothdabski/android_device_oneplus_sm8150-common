@@ -83,6 +83,9 @@ USE_XML_AUDIO_POLICY_CONF := 1
 # Bluetooth
 TARGET_USE_QTI_BT_STACK := true
 
+# Camera
+TARGET_CAMERA_NEEDS_CLIENT_INFO := true
+
 # Charger Mode
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
