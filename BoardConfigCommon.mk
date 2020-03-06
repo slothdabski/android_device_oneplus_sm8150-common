@@ -100,6 +100,8 @@ ifeq ($(HOST_OS),linux)
 endif
 
 # Display
+TARGET_HAS_HDR_DISPLAY := true
+TARGET_HAS_WIDE_COLOR_DISPLAY := true
 TARGET_USES_ION := true
 TARGET_USES_NEW_ION_API := true
 USE_OPENGL_RENDERER := true
