@@ -64,5 +64,6 @@ public class Startup extends BroadcastReceiver {
             context.startService(new Intent(context, FPSInfoService.class));
         }
         VibratorStrengthPreference.restore(context);
+        Utils.enableService(context);
     }
 }
