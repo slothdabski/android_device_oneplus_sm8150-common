@@ -17,8 +17,11 @@
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/oneplus/sm8150-common/sm8150-common-vendor.mk)
 
-# Inherit packages from vendor/oneplus/camera
-$(call inherit-product, vendor/oneplus/camera/config.mk)
+# Inherit packages from vendor/addons/google/camera
+$(call inherit-product-if-exists, vendor/addons/google/camera/config.mk)
+
+# Inherit packages from vendor/addons/oneplus/camera
+$(call inherit-product-if-exists, vendor/addons/oneplus/camera/config.mk)
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
