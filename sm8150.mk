@@ -96,7 +96,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    vendor.pa.biometrics.fingerprint.inscreen@1.0-service.oneplus_msmnile
+    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.oneplus_msmnile
 
 # Fstab
 ifneq ($(TARGET_USES_ONEPLUS_DYNAMIC_PARTITIONS),true)
@@ -149,7 +149,7 @@ PRODUCT_COPY_FILES += \
 
 # Permissions
 PRODUCT_COPY_FILES += \
-    vendor/pa/config/permissions/vendor.pa.biometrics.fingerprint.inscreen.xml:system/etc/permissions/vendor.pa.biometrics.fingerprint.inscreen.xml
+    vendor/pixeldust/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:system/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
 
 # Power
 PRODUCT_PACKAGES += \

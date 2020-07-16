@@ -34,7 +34,7 @@
 #define OP_DISPLAY_SET_DIM 10
 
 namespace vendor {
-namespace pa {
+namespace lineage {
 namespace biometrics {
 namespace fingerprint {
 namespace inscreen {
@@ -178,5 +178,5 @@ Return<int32_t> FingerprintInscreen::getSize() {
 }  // namespace inscreen
 }  // namespace fingerprint
 }  // namespace biometrics
-}  // namespace pa
+}  // namespace lineage
 }  // namespace vendor
