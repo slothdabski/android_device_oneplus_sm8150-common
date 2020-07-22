@@ -23,7 +23,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-pa
+    $(LOCAL_PATH)/overlay-pd
 
 PRODUCT_PACKAGES += \
     SM8150CommonFrameworkRes
