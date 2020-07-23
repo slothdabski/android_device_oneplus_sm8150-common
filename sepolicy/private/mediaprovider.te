@@ -1,0 +1,4 @@
+type hal_perf_hwservice, hwservice_manager_type;
+type hal_perf_default, domain, mlstrustedsubject;
+allow mediaprovider hal_perf_hwservice:hwservice_manager find;
+allow mediaprovider hal_perf_default:binder call;

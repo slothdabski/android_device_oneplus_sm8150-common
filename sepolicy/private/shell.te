@@ -1,0 +1,4 @@
+allow shell sdcardfs:dir mounton;
+allow shell media_rw_data_file:dir mounton;
+allow shell block_device:blk_file read;
+allow shell shell:capability { dac_read_search dac_override };

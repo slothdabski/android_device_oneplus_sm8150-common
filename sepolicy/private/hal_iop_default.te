@@ -1,0 +1,2 @@
+type hal_iop_default, domain, mlstrustedsubject;
+allow hal_iop_default hal_iop_default:capability dac_override;

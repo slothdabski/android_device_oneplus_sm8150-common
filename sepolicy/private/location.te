@@ -1,0 +1,2 @@
+type location, domain;
+allow location boottime_prop:file read;
