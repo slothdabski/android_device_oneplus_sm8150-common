@@ -176,6 +176,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/sensors/android.hardware.sensors@1.0-service.rc:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/init/android.hardware.sensors@1.0-service.rc
 
+# Soong Namespace
+PRODUCT_SOONG_NAMESPACES += \
+    device/oneplus/sm8150-common
+
 # QTI common
 TARGET_COMMON_QTI_COMPONENTS := \
     av \
