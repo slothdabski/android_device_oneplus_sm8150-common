@@ -1,4 +1,5 @@
 type sysfs_battery_supply, fs_type, sysfs_type;
+type vl53l1_socket, file_type;
 
 # Allow init to mount /op1, /op2 with op1_file, op2_file context
 allow init { op1_file op2_file }:filesystem { mount relabelfrom relabelto };
@@ -16,3 +17,9 @@ allow init sysfs_oem:file w_file_perms;
 allow init sysfs_fod:file setattr;
 
 allow init sysfs_battery_supply:file setattr;
+
+# Allow init to transition to dashd domain
+domain_trans(init, rootfs, dashd)
+
+# Allow init to create vl53l1_socket
+allow init vl53l1_socket:sock_file create_file_perms;

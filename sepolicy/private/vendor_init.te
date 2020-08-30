@@ -1,3 +1,7 @@
+type sysfs_ssr_toggle,  sysfs_type, fs_type;
+type vendor_disable_spu_prop, property_type;
+type vendor_tee_listener_prop, property_type;
+
 allow vendor_init system_data_file:dir setattr;
 allow vendor_init system_data_file:dir write;
 allow vendor_init system_data_file:dir add_name;
@@ -14,3 +18,22 @@ allow vendor_init anr_data_file:dir search;
 allow vendor_init anr_data_file:dir write;
 allow vendor_init anr_data_file:dir open;
 allow vendor_init dropbox_data_file:dir setattr;
+
+ 
+# Allow vendor_init to read and write to ion_device
+allow vendor_init ion_device:chr_file rw_file_perms;
+
+# Allow vendor_init to read and write to tee_device
+allow vendor_init tee_device:chr_file rw_file_perms;
+
+# Allow vendor_init to write to sysfs_ssr_toggl
+allow vendor_init sysfs_ssr_toggle:file w_file_perms;
+
+# Allow init to create tmpfs
+allow vendor_init tmpfs:dir create_dir_perms;
+
+# Allow vendor_init to set vendor_disable_spu_prop
+set_prop(vendor_init, vendor_disable_spu_prop)
+
+# Allow vendor_init to set vendor_tee_listener_prop
+get_prop(vendor_init, vendor_tee_listener_prop)
